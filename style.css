@@ -2,30 +2,65 @@
     box-sizing: border-box;
 }
 
-.row {
+body {
     display: flex;
-    justify-content: row;
-    gap: 25px;
-    border-radius: 25%;
-    top: 75%;
-    transform: translate(25%, 50%);
-}
-
-.block {
-    display: flex;
+    height: 100vh;
+    align-items: center;
     justify-content: center;
 
+}
+
+[class*="square"] {
     width: 100px;
     height: 100px;
     background-color: #e8e8e8;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10%;
+    display: flex;
 }
 
-.dot {
-    display: flex;
-    align-items: end;
+.circle {
     width: 20px;
     height: 20px;
-    margin: auto;
     background-color: black;
     border-radius: 50%;
+    margin: 3px;
+}
+
+.first-square {
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+.second-square,
+.third-square,
+.fourth-square,
+.fifth-square,
+.six-square {
+    justify-content: space-between;
+
+}
+
+.second-square .circle:last-child,
+.third-square .circle:last-child {
+    align-self: flex-end;
+}
+
+.third-square .circle:nth-child(2) {
+    align-self: center;
+}
+
+.fourth-square .col,
+.fifth-square .col,
+.six-square .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fifth-square .col:nth-child(2) {
+    justify-content: center;
 }
