@@ -39,7 +39,7 @@ body {
 .third-square,
 .fourth-square,
 .fifth-square,
-.six-square {
+.sixth-square {
     justify-content: space-between;
 
 }
@@ -55,7 +55,7 @@ body {
 
 .fourth-square .col,
 .fifth-square .col,
-.six-square .col {
+.sixth-square .col {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
